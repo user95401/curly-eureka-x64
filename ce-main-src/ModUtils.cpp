@@ -150,7 +150,7 @@ cocos2d::CCAction* ModUtils::CreateRGB(float speed, bool is_reverse) {
     //Fixes trail cutting on high refresh rates
     ModUtils::write_bytes((DWORD)GetModuleHandleA("libcocos2d.dll") + 0xAE9BD, { 0xBB , 0xFF , 0x00 , 0x00 , 0x00 , 0x90 });
     //Verify Hack
-    ModUtils::write_bytes(gd::base + 0x71D48, { 0xEB });
+    ModUtils::write_bytes(std::base + 0x71D48, { 0xEB });
 */
 bool ModUtils::WriteProcMem(const std::uintptr_t address, std::vector<uint8_t> const& bytes, std::string title) {
     //nothing to rewrite

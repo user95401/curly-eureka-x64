@@ -1,7 +1,9 @@
-@setx CE_INCL "%CD%\CURLY-EUREKA-INCL.cmake"
-@msg "%username%" CE_INCL NOW: ^
+@setx CE64_INCL "%CD%\CURLY-EUREKA-INCL.cmake"
+@echo ^
 
-"%CE_INCL%" ^
+CE64_INCL NOW: ^
+
+"%CE64_INCL%" ^
 
 ^
 
@@ -9,6 +11,11 @@ But still recomended to reload ur PC, that env stuff works ugly... ^
 
 ^
 
-Then you can add ' include($ENV{CE_INCL}) ' ^
+Then you can add ' include($ENV{CE64_INCL}) ' ^
 
-in your CMakeLists.txt in mod project to include curly-eureka :T
+in your CMakeLists.txt in mod project to include curly-eureka :T ^
+
+ ^
+
+
+@pause
