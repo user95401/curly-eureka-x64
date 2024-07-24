@@ -6,7 +6,7 @@ IS A TRY TO PORT 32x SDK TO 64x FOR GEOMETRY DASH 2.206 AND UP.
 
 current features
 - mod layers and stuff via node setup helper
-```
+```cpp
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
     if (ul_reason_for_call != DLL_PROCESS_ATTACH) return TRUE;
     REGISTER_NODE_INIT(RewardsPage, [](RewardsPage* self)
